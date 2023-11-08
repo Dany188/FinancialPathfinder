@@ -33,53 +33,13 @@
    <string notr="true">background-color: rgb(42, 145, 255)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="income_input">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
+   <widget class="QLabel" name="money">
     <property name="geometry">
      <rect>
-      <x>25</x>
-      <y>170</y>
-      <width>221</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Impact</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::ClickFocus</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:rgb(83, 85, 93);
-border: 2px solid rgb(83, 85, 93);
-border-radius: 5;
-color:white</string>
-    </property>
-    <property name="frame">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="placeholderText">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="money_3">
-    <property name="geometry">
-     <rect>
-      <x>325</x>
-      <y>130</y>
-      <width>91</width>
-      <height>41</height>
+      <x>390</x>
+      <y>20</y>
+      <width>311</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -88,87 +48,26 @@ color:white</string>
       <pointsize>22</pointsize>
      </font>
     </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: None</string>
-    </property>
     <property name="text">
-     <string>Сумма</string>
+     <string>Распределение доходов</string>
     </property>
    </widget>
-   <widget class="QLabel" name="money_2">
+   <widget class="QTableWidget" name="table_distribution">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>130</y>
-      <width>231</width>
-      <height>41</height>
+      <x>40</x>
+      <y>220</y>
+      <width>1021</width>
+      <height>141</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Impact</family>
-      <pointsize>22</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: None</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Источник дохода&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
    </widget>
-   <widget class="QLineEdit" name="amount_input">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
+   <widget class="QPushButton" name="income_button">
     <property name="geometry">
      <rect>
-      <x>255</x>
-      <y>170</y>
-      <width>231</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Impact</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::ClickFocus</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:rgb(83, 85, 93);
-border: 2px solid rgb(83, 85, 93);
-border-radius: 5;
-color:white</string>
-    </property>
-    <property name="frame">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="placeholderText">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="add_button">
-    <property name="geometry">
-     <rect>
-      <x>135</x>
-      <y>250</y>
-      <width>221</width>
+      <x>160</x>
+      <y>480</y>
+      <width>161</width>
       <height>31</height>
      </rect>
     </property>
@@ -194,52 +93,57 @@ QPushButton::hover{
      <string/>
     </property>
    </widget>
-   <widget class="QTableWidget" name="table_income">
+   <widget class="QLabel" name="login_img_2">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>130</y>
-      <width>571</width>
-      <height>192</height>
+      <x>410</x>
+      <y>470</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QLabel" name="money">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>0</y>
-      <width>181</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Impact</family>
-      <pointsize>22</pointsize>
-     </font>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
     </property>
     <property name="text">
-     <string>Мои доходы</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>number2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="count1">
+   <widget class="QPushButton" name="distribution_button">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>241</width>
-      <height>21</height>
+      <x>790</x>
+      <y>480</y>
+      <width>161</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Impact</family>
-      <pointsize>10</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(255, 149, 79);
+	border-radius: 5;
+}
+
+QPushButton::hover{
+	background-color: rgb(213, 122, 66);
+}
+</string>
     </property>
     <property name="text">
      <string/>
@@ -270,10 +174,10 @@ QPushButton::hover{
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="login_img_2">
+   <widget class="QLabel" name="login_img">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>100</x>
       <y>470</y>
       <width>51</width>
       <height>51</height>
@@ -286,7 +190,7 @@ QPushButton::hover{
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>number2.png</pixmap>
+     <pixmap>number1.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -326,88 +230,145 @@ QPushButton::hover{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="income_button">
+   <widget class="QLabel" name="money_2">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>480</y>
-      <width>161</width>
-      <height>31</height>
+      <x>110</x>
+      <y>140</y>
+      <width>251</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Impact</family>
-      <pointsize>14</pointsize>
+      <pointsize>22</pointsize>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-	color: white;
-	background-color: rgb(255, 149, 79);
-	border-radius: 5;
-}
-
-QPushButton::hover{
-	background-color: rgb(213, 122, 66);
-}
-</string>
-    </property>
     <property name="text">
-     <string/>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Подушка безопасности&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="distribution_button">
+   <widget class="QLabel" name="money_3">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>480</y>
-      <width>161</width>
-      <height>31</height>
+      <x>440</x>
+      <y>140</y>
+      <width>141</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Impact</family>
-      <pointsize>14</pointsize>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Накопления&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="money_4">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>130</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Impact</family>
+      <pointsize>22</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{
-	color: white;
-	background-color: rgb(255, 149, 79);
-	border-radius: 5;
-}
-
-QPushButton::hover{
-	background-color: rgb(213, 122, 66);
-}
-</string>
+     <string notr="true">hyphens: auto;</string>
     </property>
     <property name="text">
-     <string/>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Накопления на ...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
-   </widget>
-   <widget class="QLabel" name="login_img">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>470</y>
-      <width>51</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::ClickFocus</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>number1.png</pixmap>
-    </property>
-    <property name="scaledContents">
+    <property name="wordWrap">
      <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="money_5">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>130</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Impact</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">hyphens: auto;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Свободные деньги&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="count1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Impact</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progress">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>390</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Impact</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar {
+    background-color: #d1d6e4; /* Оранжевый фон */
+    border-radius: 10px;
+    color: white;
+}
+
+QProgressBar::chunk {
+    border-radius: 10px;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #52a499, stop:1 #245444); /* Ярко-голубой чанк */
+}
+</string>
+    </property>
+    <property name="value">
+     <number>0</number>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
