@@ -120,9 +120,9 @@ color:white</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
+      <y>130</y>
       <width>221</width>
-      <height>101</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -145,9 +145,9 @@ color:white</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>100</y>
+      <y>130</y>
       <width>91</width>
-      <height>101</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
